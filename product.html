@@ -1,67 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous">
     <style>
         .nav-item:hover{
             background-color: darkgreen;
         }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-    <nav class="navbar navbar-expand-lg bg-success"data-bs-theme="dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-        <img src="images/travel1.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">Dairy Farm</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">Products</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="services.html">Services </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="product.html">Products</a>
-        </li>
-        
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="photos.html">photos</a></li>
-            <li><a class="dropdown-item" href="video.html">videos</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-</header>
-<section>
-  <h2>PRODUCTS</h2>
-</section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+      <nav class="navbar navbar-expand-lg bg-success" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="images/travel1.jpg" alt="Logo" width="30" height="24"
+              class="d-inline-block align-text-top">Dairy Farm</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page"
+                  href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="product.html">Products</a>
+              </li>
 
-    
-</body>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item"
+                      href="photos.html">photos</a></li>
+                  <li><a class="dropdown-item" href="video.html">videos</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else
+                      here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <h2>PRODUCTS</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+              <img src="images/australia.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Australia</h5>
+                <p class="card-text">Some quick example text to build on the
+                  card title and make up the bulk of the card’s content.</p>
+                <button type="button" class="btn btn-primary"
+                  data-bs-toggle="modal" data-bs-target="#australia">More About
+                  Australia</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+              <img src="images/bali1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Bali</h5>
+                <p class="card-text">Some quick example text to build on the
+                  card title and make up the bulk of the card’s content.</p>
+                <button type="button" class="btn btn-primary"
+                  data-bs-toggle="modal" data-bs-target="#bali">More About
+                  Bali</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+              <img src="images/dubai1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Dubai</h5>
+                <p class="card-text">Some quick example text to build on the
+                  card title and make up the bulk of the card’s content.</p>
+                <button type="button" class="btn btn-primary"
+                  data-bs-toggle="modal" data-bs-target="#dubai">More About
+                  Dubai</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+              <img src="images/brazil1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Brazil</h5>
+                <p class="card-text">Some quick example text to build on the
+                  card title and make up the bulk of the card’s content.</p>
+                <button type="button" class="btn btn-primary"
+                  data-bs-toggle="modal" data-bs-target="#brazil">More About
+                  Brazil</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Australia modal -->
+    <div class="modal fade" id="australia" tabindex="-1"
+      aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Australia</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <img src="images/australia.jpg" class="card-img-top"
+                    alt="...">
+
+                </div>
+                <div class="col-md-6">
+
+                  Australia, the smallest continent and one of the largest
+                  countries on Earth, lying between the Pacific and Indian
+                  oceans in the Southern Hemisphere. Australia’s capital is
+                  Canberra, located in the southeast between the larger and more
+                  important economic and cultural centres of Sydney and
+                  Melbourne.The Australian mainland extends from west to east
+                  for nearly 2,500 miles (4,000 km) and from Cape York Peninsula
+                  in the northeast to Wilsons Promontory in the southeast for
+                  nearly 2,000 miles (3,200 km). To the south, Australian
+                  jurisdiction extends a further 310 miles (500 km) to the
+                  southern extremity of the island of Tasmania, and in the north
+                  it extends to the southern shores of Papua New Guinea.
+                  Australia is separated from Indonesia to the northwest by the
+                  Timor and Arafura seas, from Papua New Guinea to the northeast
+                  by the Coral Sea and the Torres Strait, from the Coral Sea
+                  Islands Territory by the Great Barrier Reef, from New Zealand
+                  to the southeast by the Tasman Sea, and from Antarctica in the
+                  far south by the Indian Ocean.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary"
+              data-bs-dismiss="modal">Close</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- bali modal -->
+    <div class="modal fade" id="bali" tabindex="-1"
+      aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Bali</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <img src="images/bali1.jpg" class="card-img-top" alt="...">
+
+                </div>
+                <div class="col-md-6">
+
+                  Bali, island and propinsi (or provinsi; province) in the
+                  Lesser Sunda Islands, Indonesia. It is situated 1 mile (1.6
+                  km) east of the island of Java, separated by the narrow Bali
+                  Strait. Area province, 2,232 square miles (5,780 square km).
+                  Pop. (2000) province, 3,151,162; (2010) province, 3,890,757.
+                  Most of Bali is mountainous (essentially an extension of the
+                  central mountain chain in Java), the highest point being Mount
+                  Agung, or Bali Peak, 10,308 feet (3,142 metres) in height and
+                  known locally as the “navel of the world.” It proved to be an
+                  active volcano, erupting in 1963 (after a dormancy of 120
+                  years), killing more than 1,500 persons and leaving thousands
+                  homeless. The main lowland is south of the central mountains.
+                  The period of the southeast monsoon (May to November) is the
+                  dry season. Bali’s flora (mostly hilly tropical rain forest)
+                  and fauna resemble those of Java. Some teak grows on Bali, and
+                  the giant banyan (waringin) trees are held sacred by the
+                  Balinese. Tigers are found in the west, and deer and wild pigs
+                  are numerous.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary"
+              data-bs-dismiss="modal">Close</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- dubai modal -->
+    <div class="modal fade" id="dubai" tabindex="-1"
+      aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Dubai</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <img src="images/dubai1.jpg" class="card-img-top"
+                    alt="...">
+
+                </div>
+                <div class="col-md-6">
+
+                  Once a small fishing village in the Arabian Gulf, Dubai shares
+                  the spotlight with some of the most cosmopolitan cities in the
+                  world. One of the seven emirates that make up the United Arab
+                  Emirates, the city is home to more than 200 nationalities and
+                  offers an unforgettable experience to all visitors. Whether it
+                  is by the banks of the Creek, or at the top of Burj Khalifa,
+                  the world’s tallest building, Dubai lives and breathes a sense
+                  of possibility and innovation. And with an unparalleled
+                  coastline, beautiful desert and magnificent cityscapes,
+                  memories are just waiting to be made here.
+                  Browse through our guide for fascinating information about
+                  Dubai – find out more about its traditions, transformations
+                  and the people who call this place home. Before you're
+                  through, you'll be inspired by our journey and better equipped
+                  to be a part of our growing narrative.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary"
+              data-bs-dismiss="modal">Close</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- brazil modal -->
+    <div class="modal fade" id="brazil" tabindex="-1"
+      aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Brazil</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <img src="images/brazil1.jpg" class="card-img-top"
+                    alt="...">
+
+                </div>
+                <div class="col-md-6">
+
+                  The architecture of Brazil is influenced by Europe, especially
+                  Portugal. It has a history that goes back 500 years to the
+                  time, when Pedro Álvares Cabral landed in Brazil in 1500.
+                  Portuguese colonial architecture was the first wave of
+                  architecture to go to Brazil.[459] It is the basis for all
+                  Brazilian architecture of later centuries.[460] In the 19th
+                  century, during the time of the Empire of Brazil, the country
+                  followed European trends and adopted Neoclassical and Gothic
+                  Revival architecture. Then, in the 20th century, especially in
+                  Brasília, Brazil experimented with modernist architecture.
+                  The colonial architecture of Brazil dates to the early 16th
+                  century, when Brazil was first explored, conquered and settled
+                  by the Portuguese. The Portuguese built architecture familiar
+                  to them in Europe in their aim to colonize Brazil. They built
+                  Portuguese colonial architecture, which included churches and
+                  civic architecture, including houses and forts, in Brazilian
+                  cities and the countryside.[461]
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary"
+              data-bs-dismiss="modal">Close</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"></script>
+
+  </body>
 </html>
